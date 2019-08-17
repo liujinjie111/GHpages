@@ -20,6 +20,7 @@ git rm LICENSE
 git rm README.md
 git rm _bookdown.yml
 git rm _build.bat
+git rm _deploy.bat
 git rm _build.sh
 git rm _output.yml
 git rm appveyor.yml
