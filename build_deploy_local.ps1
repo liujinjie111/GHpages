@@ -8,3 +8,12 @@ Write-Host "EBook creation starts"
 & Get-ChildItem *.rds,*.log -recurse | Remove-Item
 
 Write-Host "EBook created!"
+
+Write-Host "Deploy GH Pages Starts"
+
+& git add docs
+& git commit -m "publish new book"
+& git push origin head:master
+
+
+Write-Host "Deploy Finished!"
