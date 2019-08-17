@@ -19,8 +19,8 @@ git rm DESCRIPTION
 git rm LICENSE
 git rm README.md
 git rm _bookdown.yml
-git rm _build.bat
-git rm _deploy.bat
+git rm _build_local.bat
+git rm _deploy_local.bat
 git rm _build.sh
 git rm _output.yml
 git rm appveyor.yml
@@ -30,6 +30,7 @@ git rm index.Rmd
 git rm preamble.tex
 git rm style.css
 git rm template.gitignore
+git rm build_deploy_local.ps1
 call xcopy .\docs . /E
 
 REM commit changes to gh-pages, push it to remote gh-pages
