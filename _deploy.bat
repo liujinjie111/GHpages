@@ -11,10 +11,6 @@ git rm _build.bat
 git rm _build.sh
 git rm _output.yml
 git rm appveyor.yml
-git rm build.ps1
-git rm build_local.ps1
-git rm deploy.ps1
-git rm deploy_local.ps1
 git rm dss-template.Proj
 git rm images/readme-license.png
 git rm index.Rmd
