@@ -30,20 +30,20 @@ The configuration should look like this:
 
 76.	Start a new **Terminal** session on your computer. 
 77.	Run the following command, replacing **PATH-TO-PEM.pem** with your ***.PEM** key path: 
-```{r-setup, eval=FALSE}
+```{R, eval=FALSE}
 chmod 400 PATH-TO-PEM.pem 
 ```
 Example: 
-```{r-setup, eval=FALSE}
+```{R, eval=FALSE}
 chmod 400 /keys/qwiklabs1234.pem 
 ```
 78.	Run the following command, replacing the **PATH-TO-PEM.pem** with your ***.PEM** key and replacing **YOUR-IP-ADDRESS** with the **instance IP address** you copied earlier: 
-```{r-setup, eval=FALSE}
+```{R, eval=FALSE}
 ssh -i PATH-TO-PEM.pem -L 8888:localhost:8888 
 ec2-user@YOUR-IP-ADDRESS 
 ```
 For example: 
-```{r-setup, eval=FALSE}
+```{R, eval=FALSE}
 ssh -i /keys/qwikLABS-L1234-12345.pem -L 8888:localhost:8888 
 ec2-user@11.22.33.44
 ```
