@@ -12,7 +12,7 @@ If you did not see this output, wait 30 seconds and run the command again until 
 85.	**Copy** the URL from the terminal and **paste** it into a new web browser tab.  
 86.	You should see the following page (or similar page):
 
-![](..\jupyter.png)
+![](./images/jupyter.png)
  
 It might take a minute for the notebook page to appear. Give it time to fully load.  
 87.	To create a Jupyter notebook, click **New**, then click **Python3**. A new tab will open that will display a Jupyter Notebook. You will next create a deep learning model in this notebook.  
