@@ -21,7 +21,7 @@ First, you will forward port 8888 to the remote port 8888 for Jupyter Notebooks:
 73.	Click **Add**.  
 The configuration should look like this:
 
-![](..\forward_ports.png)
+![](./images/forward_ports.png)
  
 74.	Click **Open** to start the session.
 75.	If prompted to cache the server's host key, click **Yes**. If the connection is not successful, the instance might still be launching. Wait two minutes then try connecting again by clicking the PuTTY icon in the top-left corner of the PuTTY window and selecting **Restart session**. If you are prompted for a username, type: ec2-usera.
