@@ -171,7 +171,7 @@ b2 = tf.Variable(tf.random.normal([y_train.shape[1]]))
 z2 = tf.matmul(a1_out, w2) + b2
 a2 = tf.nn.softmax(z2)
 ```
-If you define a multi-layer network with linear neurons, then the network will only be a linear function. To allow the network to capture non-linear properties, you can add an activation function at each layer. The activation functions could be ReLU, sigmoid, or tanh. 
+If you define a multi-layer network with linear neurons, then the network will only be a linear function. To allow the network to capture non-linear properties, you can add an activation function at each layer. The activation functions could be ReLU, sigmoid, or tanh.   
 104.	Define a **cost function** and an **optimizer** to learn the **weights** and **biases**:
 ```{python, eval=FALSE}
 cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits_v2(logits = z2, labels = y))

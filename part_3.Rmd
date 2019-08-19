@@ -4,9 +4,9 @@
 13.	In the **AWS Management Console**, click on the **Services** menu, then click **EC2**.
 14.	On the upper right corner, click the **region** button, select **US East (N. Virginia)**.
 15.	Click **Launch Instance**.
-16.	On the **Step 1: Choose an Amazon Machine Image (AMI) page**, scroll down to **Deep Learning AMI (Amazon Linux)**.
+16.	On the **Step 1: Choose an Amazon Machine Image (AMI) page**, scroll down to **Deep Learning AMI (Amazon Linux)**.  
 Confirm that it is the **Amazon Linux** version, **not** the Ubuntu or Windows version. There are multiple versions, so select the highest version.
-17.	For **Deep Learning AMI (Amazon Linux)**, click **Select**.
+17.	For **Deep Learning AMI (Amazon Linux)**, click **Select**.  
 The Deep Learning AMI is designed to provide a stable, secure, and high-performance execution environment for deep learning applications running on Amazon EC2. It includes popular deep learning frameworks, including MXNet, TensorFlow, PyTorch, Keras, Chainer, Caffe, Theano, and CNTK. 
 18.	On **Step 2: Choose an Instance type page**, for **Filter by**, select **GPU instances**.
 19.	Select **p2.xlarge**.

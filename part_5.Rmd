@@ -24,7 +24,7 @@
 
 ## Upload Your Dataset 
 
-You can upload files or folders to S3 bucket by dragging and dropping. Drag and drop functionality is supported only for the **Chrome and Firefox browsers**.
-57.	In the **Bucket name** list, choose the **name** of the bucket that you want to upload your folders or files to.
-58.	In a window other than the console window, select the files and folders that you want to upload. Then **drag and drop** your selections into the console window that lists the objects in the destination bucket. The files you chose are listed in the Upload dialog box.
-59.	To immediately upload the listed files and folders without granting or removing permissions for specific users or setting public permissions for all the files that you're uploading, choose **Upload**.
+You can upload files or folders to S3 bucket by dragging and dropping. Drag and drop functionality is supported only for the **Chrome and Firefox browsers**.  
+57.	In the **Bucket name** list, choose the **name** of the bucket that you want to upload your folders or files to.  
+58.	In a window other than the console window, select the files and folders that you want to upload. Then **drag and drop** your selections into the console window that lists the objects in the destination bucket. The files you chose are listed in the Upload dialog box.  
+59.	To immediately upload the listed files and folders without granting or removing permissions for specific users or setting public permissions for all the files that you're uploading, choose **Upload**.  

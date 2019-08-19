@@ -18,7 +18,7 @@ link-citations: yes
 
 In this tutorial, we first provide an overview of AWS Elastic Compute Cloud (EC2) and Simple Storage Service (S3) services. As an example of using them for model fitting, we then will launch an Amazon Deep Learning Instance on EC2 and run a Multi-Layer Perceptron model that predicts the wireless network intrusion activities from a customized dataset uploaded and stored in an AWS S3 bucket. We will do these tasks using **AWS Management Console**.
 
-This tutorial is organized into the following parts:
+This tutorial is organized into the following parts:  
 1.	Introduce AWS EC2 and S3 Services  
 2.	Set Up an AWS Account  
 3.	Launch an Amazon Deep Learning Amazon Machine Images (AMI) Instance  
