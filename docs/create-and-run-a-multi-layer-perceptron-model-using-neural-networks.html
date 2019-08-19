@@ -347,7 +347,7 @@ code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Infor
 <a class="sourceLine" id="cb11-14" data-line-number="14">b2 <span class="op">=</span> tf.Variable(tf.random.normal([y_train.shape[<span class="dv">1</span>]]))</a>
 <a class="sourceLine" id="cb11-15" data-line-number="15">z2 <span class="op">=</span> tf.matmul(a1_out, w2) <span class="op">+</span> b2</a>
 <a class="sourceLine" id="cb11-16" data-line-number="16">a2 <span class="op">=</span> tf.nn.softmax(z2)</a></code></pre>
-<p>If you define a multi-layer network with linear neurons, then the network will only be a linear function. To allow the network to capture non-linear properties, you can add an activation function at each layer. The activation functions could be ReLU, sigmoid, or tanh.
+<p>If you define a multi-layer network with linear neurons, then the network will only be a linear function. To allow the network to capture non-linear properties, you can add an activation function at each layer. The activation functions could be ReLU, sigmoid, or tanh.<br />
 104. Define a <strong>cost function</strong> and an <strong>optimizer</strong> to learn the <strong>weights</strong> and <strong>biases</strong>:</p>
 <pre class="sourceCode python" id="cb12"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" data-line-number="1">cost <span class="op">=</span> tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits_v2(logits <span class="op">=</span> z2, labels <span class="op">=</span> y))</a>
 <a class="sourceLine" id="cb12-2" data-line-number="2">optimizer <span class="op">=</span> tf.compat.v1.train.AdamOptimizer(learning_rate <span class="op">=</span> learning_rate).minimize(cost)</a></code></pre>

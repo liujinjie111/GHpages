@@ -6,19 +6,19 @@
 
 ## Connect to Your Deep Learning AMI Instance from a Windows Machine
 
-You will set up an SSH tunnel in your PuTTY client in Windows. For security reasons, the Jupyter notebook is only available on the instance's local webserver `http://localhost:port` and is not published on the Internet. To connect to the local webserver on the instance, you can create an SSH tunnel between your computer and the instance (this is also known as port forwarding). If you do not have PuTTY installed on your computer, download it from online.
-63.	Open **PuTTYgen**.
-64.	Click **Load**. Open DeepL.pem file.
-65.	Click **Save private key**. It is fine to save it without a passphrase to protect it. Save it to a safe and accessible location with name DeepL.ppk, for example. 
-66.	Launch **PuTTY** by running the putty.exe file you downloaded.
-67.	For **Host Name (or IP address)**, type ec2-user@ and then paste the IP address of the instance that you copied earlier. It should look like: `ec2-user@11.22.33.44`.
-68.	In the navigation panel, expand **SSH** and click **Auth**.
-69.	In the **Private key file for authentication box**, browse to the .ppk file that you downloaded earlier, then click **Open**.
-70.	In the navigation panel, click **Tunnels**.
-First, you will forward port 8888 to the remote port 8888 for Jupyter Notebooks:
-71.	For **Source port**, type: 8888
-72.	For **Destination**, type: localhost:8888
-73.	Click **Add**.
+You will set up an SSH tunnel in your PuTTY client in Windows. For security reasons, the Jupyter notebook is only available on the instance's local webserver `http://localhost:port` and is not published on the Internet. To connect to the local webserver on the instance, you can create an SSH tunnel between your computer and the instance (this is also known as port forwarding). If you do not have PuTTY installed on your computer, download it from online.  
+63.	Open **PuTTYgen**.  
+64.	Click **Load**. Open DeepL.pem file.  
+65.	Click **Save private key**. It is fine to save it without a passphrase to protect it. Save it to a safe and accessible location with name DeepL.ppk, for example.   
+66.	Launch **PuTTY** by running the putty.exe file you downloaded.  
+67.	For **Host Name (or IP address)**, type ec2-user@ and then paste the IP address of the instance that you copied earlier. It should look like: `ec2-user@11.22.33.44`.  
+68.	In the navigation panel, expand **SSH** and click **Auth**.  
+69.	In the **Private key file for authentication box**, browse to the .ppk file that you downloaded earlier, then click **Open**.  
+70.	In the navigation panel, click **Tunnels**.  
+First, you will forward port 8888 to the remote port 8888 for Jupyter Notebooks:  
+71.	For **Source port**, type: 8888  
+72.	For **Destination**, type: localhost:8888  
+73.	Click **Add**.  
 The configuration should look like this:
 
 ![](..\forward_ports.png)

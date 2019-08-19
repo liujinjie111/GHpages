@@ -11,7 +11,7 @@
 ## Attach an IAM Role to an Instance
 
 To attach an IAM role to an instance that has no role, the instance can be in the stopped or running state.
-36.	Open the **Amazon EC2 console**.
-37.	In the navigation pane, choose **Instances**. 
-38.	Select the instance, choose **Actions, Instance Settings, Attach/Replace IAM role**. 
-39.	Select the IAM role to attach to your instance and choose **Apply**. 
+36.	Open the **Amazon EC2 console**.  
+37.	In the navigation pane, choose **Instances**.  
+38.	Select the instance, choose **Actions, Instance Settings, Attach/Replace IAM role**.   
+39.	Select the IAM role to attach to your instance and choose **Apply**.   

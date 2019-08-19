@@ -175,19 +175,19 @@ code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Infor
             <section class="normal" id="section-">
 <div id="explore-amazon-deep-learning-ami-and-connect-to-a-jupyter-notebook" class="section level1">
 <h1><span class="header-section-number">7</span> Explore Amazon Deep Learning AMI and Connect to a Jupyter Notebook</h1>
-<p>Jupyter notebooks are documents that allow you to create and share documents that contain both code as well as rich text elements such as equations. If you are unfamiliar with Jupyter notebooks, see Jupyter notebook docs online.
-80. In your SSH session, you will find various deep learning frameworks like MXNet, TensorFlow, Keras as well as Anaconda installed on the deep learning AMI.
-81. Type <code>source activate tensorflow_p36</code> (you could choose the framework you want to activate) in your SSH session.
-82. Type <code>nvidia-smi -L</code> to check the availability of GPU on the instance. Your EC2 instance has a Nvidia GPU processor.
-83. To start a Jupyter notebook, type <code>nohup jupyter notebook --no-browser &amp;</code>
-Press <strong>Enter</strong> if the command-line hangs while running.
-84. To view the output of the previous command, type <code>tail nohup.out</code>.
-You should see a message like this: <code>Copy/paste this URL into your browser</code> when you connect for the first time, to login with a token: <code>http://localhost:8888/?token=xxxx</code>.
-If you did not see this output, wait 30 seconds and run the command again until it appears.
-85. <strong>Copy</strong> the URL from the terminal and <strong>paste</strong> it into a new web browser tab.
+<p>Jupyter notebooks are documents that allow you to create and share documents that contain both code as well as rich text elements such as equations. If you are unfamiliar with Jupyter notebooks, see Jupyter notebook docs online.<br />
+80. In your SSH session, you will find various deep learning frameworks like MXNet, TensorFlow, Keras as well as Anaconda installed on the deep learning AMI.<br />
+81. Type <code>source activate tensorflow_p36</code> (you could choose the framework you want to activate) in your SSH session.<br />
+82. Type <code>nvidia-smi -L</code> to check the availability of GPU on the instance. Your EC2 instance has a Nvidia GPU processor.<br />
+83. To start a Jupyter notebook, type <code>nohup jupyter notebook --no-browser &amp;</code><br />
+Press <strong>Enter</strong> if the command-line hangs while running.<br />
+84. To view the output of the previous command, type <code>tail nohup.out</code>.<br />
+You should see a message like this: <code>Copy/paste this URL into your browser</code> when you connect for the first time, to login with a token: <code>http://localhost:8888/?token=xxxx</code>.<br />
+If you did not see this output, wait 30 seconds and run the command again until it appears.<br />
+85. <strong>Copy</strong> the URL from the terminal and <strong>paste</strong> it into a new web browser tab.<br />
 86. You should see the following page (or similar page):</p>
 <p><img src="..\jupyter.png" /></p>
-<p>It might take a minute for the notebook page to appear. Give it time to fully load.
+<p>It might take a minute for the notebook page to appear. Give it time to fully load.<br />
 87. To create a Jupyter notebook, click <strong>New</strong>, then click <strong>Python3</strong>. A new tab will open that will display a Jupyter Notebook. You will next create a deep learning model in this notebook.</p>
 
 </div>
