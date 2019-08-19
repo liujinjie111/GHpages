@@ -184,7 +184,7 @@
 
 In this tutorial, we first provide an overview of AWS Elastic Compute Cloud (EC2) and Simple Storage Service (S3) services. As an example of using them for model fitting, we then will launch an Amazon Deep Learning Instance on EC2 and run a Multi-Layer Perceptron model that predicts the wireless network intrusion activities from a customized dataset uploaded and stored in an AWS S3 bucket. We will do these tasks using \textbf{AWS Management Console}.
 
-This tutorial is organized into the following parts:
+This tutorial is organized into the following parts:\\
 1. Introduce AWS EC2 and S3 Services\\
 2. Set Up an AWS Account\\
 3. Launch an Amazon Deep Learning Amazon Machine Images (AMI) Instance\\
@@ -247,12 +247,12 @@ The first thing to do is to create your very own AWS account. Amazon updates the
 \item
   Enter a \textbf{username}, your \textbf{e-mail address}, and the \textbf{password} you want to use. Then choose \textbf{Continue}.
 \item
-  Choose \textbf{Personal} or \textbf{Professional}.
+  Choose \textbf{Personal} or \textbf{Professional}.\\
   \textbf{Note:} Personal accounts and professional accounts have the same features and functions.
 \item
   On the Account Information screen, enter your \textbf{address} and \textbf{phone number} information. You're asked to select the box confirming that you agree to the terms of the AWS customer agreement.
 \item
-  Enter the required \textbf{personal information}, confirm your \textbf{acceptance} of the customer agreement, and then click the \textbf{Create Account} and \textbf{Continue} button.
+  Enter the required \textbf{personal information}, confirm your \textbf{acceptance} of the customer agreement, and then click the \textbf{Create Account} and \textbf{Continue} button.\\
   \textbf{Note:} You receive an email to confirm that your account is created. You can sign in to your new account using the email address and password you supplied. However, you can't use AWS services until you finish activating your account.
 \item
   Enter the required \textbf{payment information} in the appropriate fields and then choose \textbf{Secure Submit}.
@@ -270,7 +270,7 @@ The first thing to do is to create your very own AWS account. Amazon updates the
   \item
     Enter the code displayed in the captcha.
   \item
-    When you're ready, choose Contact me. In a few moments, an automated system will contact you.
+    When you're ready, choose Contact me. In a few moments, an automated system will contact you.\\
     \textbf{Note:} If you chose to verify your account by SMS, choose \textbf{Send SMS} instead.
   \item
     Enter the PIN you receive by text message or voice call, and then choose \textbf{Continue}.
@@ -299,10 +299,10 @@ The first thing to do is to create your very own AWS account. Amazon updates the
 \item
   Click \textbf{Launch Instance}.
 \item
-  On the \textbf{Step 1: Choose an Amazon Machine Image (AMI) page}, scroll down to \textbf{Deep Learning AMI (Amazon Linux)}.
+  On the \textbf{Step 1: Choose an Amazon Machine Image (AMI) page}, scroll down to \textbf{Deep Learning AMI (Amazon Linux)}.\\
   Confirm that it is the \textbf{Amazon Linux} version, \textbf{not} the Ubuntu or Windows version. There are multiple versions, so select the highest version.
 \item
-  For \textbf{Deep Learning AMI (Amazon Linux)}, click \textbf{Select}.
+  For \textbf{Deep Learning AMI (Amazon Linux)}, click \textbf{Select}.\\
   The Deep Learning AMI is designed to provide a stable, secure, and high-performance execution environment for deep learning applications running on Amazon EC2. It includes popular deep learning frameworks, including MXNet, TensorFlow, PyTorch, Keras, Chainer, Caffe, Theano, and CNTK.
 \item
   On \textbf{Step 2: Choose an Instance type page}, for \textbf{Filter by}, select \textbf{GPU instances}.
@@ -366,9 +366,9 @@ The first thing to do is to create your very own AWS account. Amazon updates the
 \section{Attach an IAM Role to an Instance}\label{attach-an-iam-role-to-an-instance}}
 
 To attach an IAM role to an instance that has no role, the instance can be in the stopped or running state.
-36. Open the \textbf{Amazon EC2 console}.
-37. In the navigation pane, choose \textbf{Instances}.
-38. Select the instance, choose \textbf{Actions, Instance Settings, Attach/Replace IAM role}.
+36. Open the \textbf{Amazon EC2 console}.\\
+37. In the navigation pane, choose \textbf{Instances}.\\
+38. Select the instance, choose \textbf{Actions, Instance Settings, Attach/Replace IAM role}.\\
 39. Select the IAM role to attach to your instance and choose \textbf{Apply}.
 
 \hypertarget{use-the-amazon-simple-storage-service-s3-console-to-store-and-transfer-your-data}{%
@@ -428,9 +428,9 @@ To attach an IAM role to an instance that has no role, the instance can be in th
 \hypertarget{upload-your-dataset}{%
 \section{Upload Your Dataset}\label{upload-your-dataset}}
 
-You can upload files or folders to S3 bucket by dragging and dropping. Drag and drop functionality is supported only for the \textbf{Chrome and Firefox browsers}.
-57. In the \textbf{Bucket name} list, choose the \textbf{name} of the bucket that you want to upload your folders or files to.
-58. In a window other than the console window, select the files and folders that you want to upload. Then \textbf{drag and drop} your selections into the console window that lists the objects in the destination bucket. The files you chose are listed in the Upload dialog box.
+You can upload files or folders to S3 bucket by dragging and dropping. Drag and drop functionality is supported only for the \textbf{Chrome and Firefox browsers}.\\
+57. In the \textbf{Bucket name} list, choose the \textbf{name} of the bucket that you want to upload your folders or files to.\\
+58. In a window other than the console window, select the files and folders that you want to upload. Then \textbf{drag and drop} your selections into the console window that lists the objects in the destination bucket. The files you chose are listed in the Upload dialog box.\\
 59. To immediately upload the listed files and folders without granting or removing permissions for specific users or setting public permissions for all the files that you're uploading, choose \textbf{Upload}.
 
 \hypertarget{retrieve-the-ip-address-of-your-deep-learning-ami-instance-and-connect-to-your-deep-learning-ami-instance}{%
@@ -451,19 +451,19 @@ You can upload files or folders to S3 bucket by dragging and dropping. Drag and 
 \hypertarget{connect-to-your-deep-learning-ami-instance-from-a-windows-machine}{%
 \section{Connect to Your Deep Learning AMI Instance from a Windows Machine}\label{connect-to-your-deep-learning-ami-instance-from-a-windows-machine}}
 
-You will set up an SSH tunnel in your PuTTY client in Windows. For security reasons, the Jupyter notebook is only available on the instance's local webserver \texttt{http://localhost:port} and is not published on the Internet. To connect to the local webserver on the instance, you can create an SSH tunnel between your computer and the instance (this is also known as port forwarding). If you do not have PuTTY installed on your computer, download it from online.
-63. Open \textbf{PuTTYgen}.
-64. Click \textbf{Load}. Open DeepL.pem file.
-65. Click \textbf{Save private key}. It is fine to save it without a passphrase to protect it. Save it to a safe and accessible location with name DeepL.ppk, for example.
-66. Launch \textbf{PuTTY} by running the putty.exe file you downloaded.
-67. For \textbf{Host Name (or IP address)}, type ec2-user@ and then paste the IP address of the instance that you copied earlier. It should look like: \texttt{ec2-user@11.22.33.44}.
-68. In the navigation panel, expand \textbf{SSH} and click \textbf{Auth}.
-69. In the \textbf{Private key file for authentication box}, browse to the .ppk file that you downloaded earlier, then click \textbf{Open}.
-70. In the navigation panel, click \textbf{Tunnels}.
-First, you will forward port 8888 to the remote port 8888 for Jupyter Notebooks:
-71. For \textbf{Source port}, type: 8888
-72. For \textbf{Destination}, type: localhost:8888
-73. Click \textbf{Add}.
+You will set up an SSH tunnel in your PuTTY client in Windows. For security reasons, the Jupyter notebook is only available on the instance's local webserver \texttt{http://localhost:port} and is not published on the Internet. To connect to the local webserver on the instance, you can create an SSH tunnel between your computer and the instance (this is also known as port forwarding). If you do not have PuTTY installed on your computer, download it from online.\\
+63. Open \textbf{PuTTYgen}.\\
+64. Click \textbf{Load}. Open DeepL.pem file.\\
+65. Click \textbf{Save private key}. It is fine to save it without a passphrase to protect it. Save it to a safe and accessible location with name DeepL.ppk, for example.\\
+66. Launch \textbf{PuTTY} by running the putty.exe file you downloaded.\\
+67. For \textbf{Host Name (or IP address)}, type ec2-user@ and then paste the IP address of the instance that you copied earlier. It should look like: \texttt{ec2-user@11.22.33.44}.\\
+68. In the navigation panel, expand \textbf{SSH} and click \textbf{Auth}.\\
+69. In the \textbf{Private key file for authentication box}, browse to the .ppk file that you downloaded earlier, then click \textbf{Open}.\\
+70. In the navigation panel, click \textbf{Tunnels}.\\
+First, you will forward port 8888 to the remote port 8888 for Jupyter Notebooks:\\
+71. For \textbf{Source port}, type: 8888\\
+72. For \textbf{Destination}, type: localhost:8888\\
+73. Click \textbf{Add}.\\
 The configuration should look like this:
 
 \includegraphics{../forward_ports.png}
@@ -540,21 +540,21 @@ For example:
 \hypertarget{explore-amazon-deep-learning-ami-and-connect-to-a-jupyter-notebook}{%
 \chapter{Explore Amazon Deep Learning AMI and Connect to a Jupyter Notebook}\label{explore-amazon-deep-learning-ami-and-connect-to-a-jupyter-notebook}}
 
-Jupyter notebooks are documents that allow you to create and share documents that contain both code as well as rich text elements such as equations. If you are unfamiliar with Jupyter notebooks, see Jupyter notebook docs online.
-80. In your SSH session, you will find various deep learning frameworks like MXNet, TensorFlow, Keras as well as Anaconda installed on the deep learning AMI.
-81. Type \texttt{source\ activate\ tensorflow\_p36} (you could choose the framework you want to activate) in your SSH session.
-82. Type \texttt{nvidia-smi\ -L} to check the availability of GPU on the instance. Your EC2 instance has a Nvidia GPU processor.
-83. To start a Jupyter notebook, type \texttt{nohup\ jupyter\ notebook\ -\/-no-browser\ \&}
-Press \textbf{Enter} if the command-line hangs while running.
-84. To view the output of the previous command, type \texttt{tail\ nohup.out}.
-You should see a message like this: \texttt{Copy/paste\ this\ URL\ into\ your\ browser} when you connect for the first time, to login with a token: \texttt{http://localhost:8888/?token=xxxx}.
-If you did not see this output, wait 30 seconds and run the command again until it appears.
-85. \textbf{Copy} the URL from the terminal and \textbf{paste} it into a new web browser tab.
+Jupyter notebooks are documents that allow you to create and share documents that contain both code as well as rich text elements such as equations. If you are unfamiliar with Jupyter notebooks, see Jupyter notebook docs online.\\
+80. In your SSH session, you will find various deep learning frameworks like MXNet, TensorFlow, Keras as well as Anaconda installed on the deep learning AMI.\\
+81. Type \texttt{source\ activate\ tensorflow\_p36} (you could choose the framework you want to activate) in your SSH session.\\
+82. Type \texttt{nvidia-smi\ -L} to check the availability of GPU on the instance. Your EC2 instance has a Nvidia GPU processor.\\
+83. To start a Jupyter notebook, type \texttt{nohup\ jupyter\ notebook\ -\/-no-browser\ \&}\\
+Press \textbf{Enter} if the command-line hangs while running.\\
+84. To view the output of the previous command, type \texttt{tail\ nohup.out}.\\
+You should see a message like this: \texttt{Copy/paste\ this\ URL\ into\ your\ browser} when you connect for the first time, to login with a token: \texttt{http://localhost:8888/?token=xxxx}.\\
+If you did not see this output, wait 30 seconds and run the command again until it appears.\\
+85. \textbf{Copy} the URL from the terminal and \textbf{paste} it into a new web browser tab.\\
 86. You should see the following page (or similar page):
 
 \includegraphics{../jupyter.png}
 
-It might take a minute for the notebook page to appear. Give it time to fully load.
+It might take a minute for the notebook page to appear. Give it time to fully load.\\
 87. To create a Jupyter notebook, click \textbf{New}, then click \textbf{Python3}. A new tab will open that will display a Jupyter Notebook. You will next create a deep learning model in this notebook.
 
 \hypertarget{create-and-run-a-multi-layer-perceptron-model-using-neural-networks}{%
@@ -817,7 +817,7 @@ The example below uses some basic functions from TensorFlow to create neural net
 \end{Highlighting}
 \end{Shaded}
 
-If you define a multi-layer network with linear neurons, then the network will only be a linear function. To allow the network to capture non-linear properties, you can add an activation function at each layer. The activation functions could be ReLU, sigmoid, or tanh.
+If you define a multi-layer network with linear neurons, then the network will only be a linear function. To allow the network to capture non-linear properties, you can add an activation function at each layer. The activation functions could be ReLU, sigmoid, or tanh.\\
 104. Define a \textbf{cost function} and an \textbf{optimizer} to learn the \textbf{weights} and \textbf{biases}:
 
 \begin{Shaded}
